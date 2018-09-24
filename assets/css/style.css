@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+.clearfix::after{
+    clear: both;
+  content:"";
+  }
+
+
+.containermain
+{background-image:url(/assets/images/background.JPG);
+  z-index: -5;
+  margin:80px;
+  position:relative;
+}
+
+
+.container {position: fixed;
+    width: 100%;
+    height: 75px;
+    background: lightgray;
+  }
+
+.col-1{width:33%;
+
+}
+
+.container2 {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: lightgray;
+    text-align:center;
+    z-index: 2;
+    margin-top:75px;
+  }
+
+.container3{position:relative;
+  float:left;
+  z-index: 1;
+  margin-top:25px;
+  margin-left:50px;
+  font-size:25px;
+}
+
+.container4{position:relative;
+float:left;
+background:lightgrey;
+padding:0px;
+margin-top:10px;
+
+}
+
+#details{
+font: size 20px;
+float:left;}
+
+#pic {
+    float:left;
+    width: 150px;
+    height: 150px;
+  }
+
+.Name{
+   position: relative;
+   width: 200px;
+   height: 75px;
+   background: #4aaaa5;
+   border: 1px solid lightgrey;
+   color:white;
+   float: left;
+   top:-2px;
+   bottom:0;
+   right:-187px;
+   padding:25px;
+   z-index:4;
+   font-size:20px;
+
+  }
+  
+.Links{
+    float:right;
+    text-align:center;
+    justify-content: center;
+    padding:25px;
+ }
+
+ .footer{
+position:fixed;
+left:0;
+bottom:0;
+width:100%;
+background-color:grey;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.portfolio-pic{height:150px;
+width:150px;
+float:left;
+position: relative;
+padding:5px}
+
+  
+.portfolio{position:relative;
+ float:left;
+  z-index: 1;
+  margin-top:100px;
+  margin-left:100px;
+  font-size:25px;
+}
+
+.game{
+  display:inline-block;
+  margin:15px;
+  margin-top: 170px;
+}
+
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.left {float: left;}
+ 
+@media screen and (max-width: 380px){
+    .col-1{width:50%;
+      z-index: -1;
+    }
+    .desc{width:50%;
+      z-index: -1;}
+    .portfolio{float:left;
+    z-index: -1;}
+  }
+  .Name{float:left;
+    height:10%;
+  right:25px;}
+
+  .portfolio-pic{
+    z-index: -1;
+  }
+
+
+
+@media screen and (max-width: 640px){
+  ul.topnav li.left, 
+  ul.topnav li {float: none;}
+  .col-1{width:50%;
+    z-index: -1;
+  }
+  .desc{width:50%;
+    z-index: -1;}
+  .portfolio{float:left;
+  z-index: -1;}
+}
+.Name{float:left;
+  height:10%;
+right:25px;}
+
+.container{height:10%;
+}
+
+.portfolio-pic{
+  z-index: -1;
+}
+}
